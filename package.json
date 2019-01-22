@@ -1,0 +1,32 @@
+{
+  "name": "salary-calculator",
+  "version": "0.1.0",
+  "private": true,
+  "proxy": "http://localhost:5000",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "express": "^4.16.4",
+    "mongoose": "^5.3.14",
+    "pg": "^7.6.0",
+    "prop-types": "^15.6.0",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.1.0",
+    "react-scripts": "^2.0.5",
+    "redux": "^4.0.1",
+    "redux-logger": "^3.0.6"
+  },
+  "scripts": {
+    "start": "react-scripts build && node server/server.js",
+    "client": "react-scripts start",
+    "server": "nodemon  --watch server server/server.js",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
