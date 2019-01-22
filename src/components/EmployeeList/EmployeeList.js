@@ -24,13 +24,13 @@ class EmployeeList extends Component {
     return (
       <ul>
         {this.props.reduxState.employeeReducer.map(employee => (
-          <li key={employee.id}>
+          <li key={employee._id}>
             {`${employee.firstname}
             ${employee.lastname}
             is the ${employee.jobtitle}
             and makes ${employee.annualsalary}`}
             <button onClick={() => { 
-                this.deleteEmployee(employee.id) 
+                this.deleteEmployee(employee._id) 
               } 
             }>
               Delete
